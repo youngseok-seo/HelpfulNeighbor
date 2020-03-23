@@ -13,14 +13,14 @@ S.page = styled.div`
 `;
 
 S.Logo = styled.img` 
-    position: fixed;
-    height: 60vh;
+    // position: fixed;
+    height: 50vh;
+    width; auto;
    
 `;
 
 S.LogoContainer = styled.div`
     display: flex;
-    height: 100%;
     width: 100%;
 
     align-items: center;
@@ -30,9 +30,10 @@ S.LogoContainer = styled.div`
 
 S.Button = styled.button`
     
-    margin-bottom: 15vh;
-    height: 10vh;
-    width: 10vw;
+    height: auto;
+    width: auto;
+    padding: 2vw;
+
     font-family: Poppins;
     font-weight: 300;
     font-size: 1.5em;
@@ -42,26 +43,33 @@ S.Button = styled.button`
     border-color: #0003FF;
     border-width: thin;
     border-radius: 10px;
+    outline: none;
+    text-decoration: none;
 
     &:hover {
         color: #0003FF;
+        transform: scale(1.05);
     }
 `;
+
+S.ButtonContainer = styled.div`
+
+`;
+
+
 
 
 const LandingPage = () => {
     
     return (
         <S.page>
-            <S.LogoContainer as="a" href="/home">
+            <S.LogoContainer>
                 <S.Logo src="https://user-images.githubusercontent.com/46095809/77264774-51971880-6c58-11ea-854e-a432342d1075.png" />
 
             </S.LogoContainer>
-
-            <S.Button >Get Started</S.Button>
-
-
-            
+            <S.ButtonContainer as="a" href="/home">
+                <S.Button>Get Started</S.Button>           
+            </S.ButtonContainer>
         </S.page>
     );
     
