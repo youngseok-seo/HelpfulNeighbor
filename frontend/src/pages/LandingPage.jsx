@@ -28,13 +28,39 @@ S.LogoContainer = styled.div`
     
 `;
 
+S.Button = styled.button`
+    
+    margin-bottom: 15vh;
+    height: 10vh;
+    width: 10vw;
+    font-family: Poppins;
+    font-weight: 300;
+    font-size: 1.5em;
+    color: grey;
+    text-align: center;
+    background-color: white;
+    border-color: #0003FF;
+    border-width: thin;
+    border-radius: 10px;
+
+    &:hover {
+        color: #0003FF;
+    }
+`;
+
+
 const LandingPage = () => {
     
     return (
         <S.page>
             <S.LogoContainer as="a" href="/home">
                 <S.Logo src="https://user-images.githubusercontent.com/46095809/77264774-51971880-6c58-11ea-854e-a432342d1075.png" />
+
             </S.LogoContainer>
+
+            <S.Button >Get Started</S.Button>
+
+
             
         </S.page>
     );
