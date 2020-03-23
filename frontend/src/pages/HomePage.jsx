@@ -85,6 +85,7 @@ S.Contact = styled.div`
     margin-right: 25%;
     margin-top: 1%;
     margin-bottom: 2%;
+
 `;
 
 S.TextParagraph = styled.p`
@@ -105,6 +106,10 @@ S.SloganContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+`;
+
+S.PhoneContainer = styled.div`
+    text-decoration: none;
 `;
 
 const HomePage = () => {
@@ -137,14 +142,23 @@ const HomePage = () => {
                     {/* <S.TextParagraph>
                     Whether it be delivering groceries or any other errand, please do not hesitate to give us a call; we will be more than happy to help!                        
                     </S.TextParagraph> */}
-                    <S.TextParagraphBold> 
+                    {/* <S.TextParagraphBold> 
                         Call or text the type of delivery (e.g. grocery, pharmacy), address and any other details, and we will respond with an estimated time of delivery. Receipts will be delivered and payments can be made in cash/cheque/e-transfer to the deliverer.
-                    </S.TextParagraphBold> 
+                    </S.TextParagraphBold>  */}
+                    <S.TextParagraph>
+                    Whether it be groceries, picking up prescriptions or any other errand, please do not hesitate to reach out; we will be more than happy to help! 
+                    </S.TextParagraph>
+                    <S.TextParagraphBold>
+                    Call or text the number below with a description of the errand you need. We will coordinate an estimated delivery time and your deliverer will provide receipts if applicable. If payment is needed (ex. groceries), this can be made via cash, cheque or e-transfer to the deliverer. 
+                    </S.TextParagraphBold>
                     
                 </S.Text>
-                <S.Contact>
-                    (250) 819 - 3712
-                </S.Contact>
+                <S.PhoneContainer as="a" href="tel:250-819-3712">
+                    <S.Contact>
+                        (250) 819 - 3712
+                    </S.Contact>
+                </S.PhoneContainer>
+
                 <S.SloganContainer>
                     <S.Slogan src="https://user-images.githubusercontent.com/46095809/77281747-24ad2a80-6c85-11ea-9cd1-52aa728c3fe6.png" />
                 </S.SloganContainer>
