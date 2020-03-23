@@ -90,25 +90,12 @@ S.Contact = styled.div`
 S.TextParagraph = styled.p`
 `;
 
-// S.Slogan = styled.div`
-    
-//     font-family: Poppins;
-//     font-weight: 200;
-//     font-size: 1.8em;
-//     color: #0003FF;
-//     text-align: center;
-//     // margin-left: 25%;
-//     // margin-right: 25%;
-//     margin-top: 3%;
-//     margin-bottom: 1%;
-// `;
 
 S.LocalsHelpingLocals = styled.img`
     margin-top: 3%;
     margin-bottom: 1%;
     margin-left: 40%;
     margin-right: 40%;
-
     `;
 
 const HomePage = () => {
@@ -148,9 +135,7 @@ const HomePage = () => {
                 </S.Contact>
 
                 <S.LocalsHelpingLocals src="https://user-images.githubusercontent.com/46095809/77281747-24ad2a80-6c85-11ea-9cd1-52aa728c3fe6.png" />
-                {/* <S.Slogan>
-                    LOCALS  HELPING  LOCALS
-                </S.Slogan> */}
+
             </S.Content>
             
         </S.page>
