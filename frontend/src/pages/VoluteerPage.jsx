@@ -90,6 +90,11 @@ S.Text = styled.div`
 `;
 
 S.TextParagraph = styled.p`
+    font-weight: 300;
+`;
+
+S.TextParagraphBold = styled.p`
+    font-weight: 600;
 `;
 
 S.Contact = styled.div`
@@ -127,9 +132,9 @@ const VolunteerPage = () => {
                     Volunteer
                 </S.Title>
                 <S.Text>
-                    <S.TextParagraph>
+                    <S.TextParagraphBold>
                         Want to help out? 
-                    </S.TextParagraph>
+                    </S.TextParagraphBold>
                     <S.TextParagraph>
                         Please send us an email, and we will reach out with more information!
                     </S.TextParagraph>
