@@ -84,10 +84,15 @@ S.Contact = styled.div`
     margin-left: 25%;
     margin-right: 25%;
     margin-top: 1%;
-    margin-bottom: 1%;
+    margin-bottom: 2%;
 `;
 
 S.TextParagraph = styled.p`
+    font-weight: 200;
+`;
+
+S.TextParagraphBold = styled.p`
+    font-weight: 800;
 `;
 
 
@@ -100,7 +105,6 @@ S.SloganContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-
 `;
 
 const HomePage = () => {
@@ -130,9 +134,12 @@ const HomePage = () => {
                     <S.TextParagraph>
                     We want to offer our volunteer services to those in need - especially the senior community, those with underlying conditions, or anyone who may not feel comfortable leaving their home at this time. 
                     </S.TextParagraph>
-                    <S.TextParagraph>
+                    {/* <S.TextParagraph>
                     Whether it be delivering groceries or any other errand, please do not hesitate to give us a call; we will be more than happy to help!                        
-                    </S.TextParagraph>
+                    </S.TextParagraph> */}
+                    <S.TextParagraphBold> 
+                        Call or text the type of delivery (e.g. grocery, pharmacy), address and any other details, and we will respond with an estimated time of delivery. Receipts will be delivered and payments can be made in cash/cheque/e-transfer to the deliverer.
+                    </S.TextParagraphBold> 
                     
                 </S.Text>
                 <S.Contact>

@@ -63,12 +63,15 @@ S.Content = styled.div`
 `;
 
 S.AboutImage = styled.img`
-    position: fixed;
-    height: 85%;
-    // width: 30%;
-    margin-left: 60%;
-    //margin-right: 0%;
-    //margin-top: 4%;
+    width: 50%;
+`;
+
+S.AboutImageContainer = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
 
 `;
 
@@ -79,9 +82,9 @@ S.Title = styled.div`
     font-size: 2em;
     color: #0003FF;
     text-align: center;
-
-    margin-right: 45vw;
-    margin-top: 5%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 2%;
     margin-bottom: 1%;
 `;
 
@@ -91,26 +94,14 @@ S.Text = styled.div`
     font-family: Poppins;
     font-size: 1.2em;
     color: #000000;
-    // text-align: center;
-    margin-left: 5%;
-    margin-right: 50%;
-    margin-top: 2%;
+    margin-left: 25%;
+    margin-right: 25%;
+    // margin-top: 2%;
     margin-bottom: 2%;
 `;
 
 S.TextParagraph = styled.p`
-`;
-
-S.Test = styled.img`
-    position: absolute;
-    width: 228px;
-    height: 55px;
-    left: 834px;
-    top: 757px;
-
-    //background: #0003FF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    transform: rotate(-180deg);
+    font-weight: 300;
 `;
 
 const AboutPage = () => {
@@ -134,20 +125,15 @@ const AboutPage = () => {
                 <S.Title>
                     About Us
                 </S.Title>
-                {/* <S.Test src="https://user-images.githubusercontent.com/46095809/77288378-eb7cb680-6c94-11ea-9330-c66a4b581178.png" /> */}
-
                 <S.Text>
                     <S.TextParagraph>
-                    Helpful Neighbor was started by two University students, James and Young. With University classes  postponed and the city in a state of emergency, we wanted to find a useful way to volunteer our time and energy.  
+                        Helpful Neighbor was started by two university students, James and Young. With classes postponed and the city in a state of emergency, we wanted to find a useful way to volunteer our time and energy.  
                     </S.TextParagraph>
-
-                    <S.TextParagraph> 
-                        Outlining our procedure.. call or text type of delivery (eg. grocery list, pickup pharmacy stuff), address and any other details, and we will respond with an estimated time of delivery. Recipts will be delivered and payment can be made in cash, cheque or etransfer to the person of delivery.
-                    </S.TextParagraph>
-                    
+                      
                 </S.Text>
-
-                <S.AboutImage src="https://user-images.githubusercontent.com/46095809/77266087-bd2eb500-6c5b-11ea-8e28-00b11d1dcfdc.JPG" />
+                <S.AboutImageContainer>
+                    <S.AboutImage src="https://user-images.githubusercontent.com/46095808/77294701-f5f17d00-6ca1-11ea-988c-69ffe2ea98c3.jpg" />
+                </S.AboutImageContainer>
             </S.Content>
             
         </S.page>
