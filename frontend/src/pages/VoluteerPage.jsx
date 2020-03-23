@@ -62,6 +62,49 @@ S.Content = styled.div`
     justify-content: flex-start;
 `;
 
+S.Title = styled.div`
+    
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 2em;
+    color: #0003FF;
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 2%;
+    margin-bottom: 1%;
+`;
+
+S.Text = styled.div`
+    display: flex;
+    flex-direction: column;
+
+    font-family: Poppins;
+    font-size: 1.2em;
+    color: #000000;
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+`;
+
+S.TextParagraph = styled.p`
+`;
+
+S.Contact = styled.div`
+    
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 1.5em;
+    color: #0003FF;
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 2%;
+    margin-bottom: 1%;
+`;
+
 const VolunteerPage = () => {
     
     return (
@@ -80,7 +123,20 @@ const VolunteerPage = () => {
             </S.Top>
 
             <S.Content>
-                
+                <S.Title>
+                    Volunteer
+                </S.Title>
+                <S.Text>
+                    <S.TextParagraph>
+                        Want to help out? 
+                    </S.TextParagraph>
+                    <S.TextParagraph>
+                        Please send us an email, and we will reach out with more information!
+                    </S.TextParagraph>
+                </S.Text>
+                <S.Contact as="a" href="mailto:hnkamloops@gmail.com">
+                    hnkamloops@gmail.com
+                </S.Contact>
             </S.Content>
             
         </S.page>
