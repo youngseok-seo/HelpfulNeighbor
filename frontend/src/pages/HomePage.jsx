@@ -91,12 +91,17 @@ S.TextParagraph = styled.p`
 `;
 
 
-S.LocalsHelpingLocals = styled.img`
-    margin-top: 3%;
-    margin-bottom: 1%;
-    margin-left: 40%;
-    margin-right: 40%;
-    `;
+S.Slogan = styled.img`
+    height: auto;
+    width: 30vh;
+`;
+
+S.SloganContainer = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+`;
 
 const HomePage = () => {
     
@@ -133,8 +138,9 @@ const HomePage = () => {
                 <S.Contact>
                     (250) 819 - 3712
                 </S.Contact>
-
-                <S.LocalsHelpingLocals src="https://user-images.githubusercontent.com/46095809/77281747-24ad2a80-6c85-11ea-9cd1-52aa728c3fe6.png" />
+                <S.SloganContainer>
+                    <S.Slogan src="https://user-images.githubusercontent.com/46095809/77281747-24ad2a80-6c85-11ea-9cd1-52aa728c3fe6.png" />
+                </S.SloganContainer>
 
             </S.Content>
             
