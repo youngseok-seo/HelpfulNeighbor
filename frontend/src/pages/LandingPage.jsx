@@ -18,11 +18,23 @@ S.Logo = styled.img`
    
 `;
 
+S.LogoContainer = styled.div`
+    display: flex;
+    height: 100%;
+    width: 100%;
+
+    align-items: center;
+    justify-content: center;
+    
+`;
+
 const LandingPage = () => {
     
     return (
         <S.page>
-            <S.Logo src="https://user-images.githubusercontent.com/46095809/77264774-51971880-6c58-11ea-854e-a432342d1075.png" />
+            <S.LogoContainer as="a" href="/home">
+                <S.Logo src="https://user-images.githubusercontent.com/46095809/77264774-51971880-6c58-11ea-854e-a432342d1075.png" />
+            </S.LogoContainer>
             
         </S.page>
     );
